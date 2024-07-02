@@ -47,11 +47,32 @@ const addReview = async (
 
   session.endSession();
 };
+const getAllReviews = async (slug: string): Promise<TReview[]> => {
+  const movie = await Movie.findOne({ slug });
 
+  if (!movie) {
+    throw new Error("Movie not found");
+  }
+
+  return await Review.find({ movie: movie._id });
+};
+
+const getReviewBySlug = async (id: string): Promise<TReview | null> => {
+  return await Review.findById(id);
+};
+const updateReview = async (id: string, reviewData: Partial<TReview>): Promise<TReview | null> => {
+  const review = await Review.findByIdAndUpdate(id, reviewData, { new: true });
+
+  if (!review) {
+    throw new Error("Review not found");
+  }
+
+  return review;
+};
 export const ReviewServices = {
   addReview,
-  //   getAllReviews,
-  //   getReviewById
-  //   updateReview,
+  getAllReviews,
+  getReviewBySlug,
+    updateReview,
   //   deleteReview,
 };
