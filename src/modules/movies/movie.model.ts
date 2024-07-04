@@ -34,6 +34,10 @@ const movieSchema = new Schema<TMovie, TMovieModel, TMovieMethods>({
     type: Number,
     default: 0,
   },
+  image: { 
+    type: String,
+    required: [true, "image is required"],
+  },
 });
 
 /* Way-2: Using pre hook middleware

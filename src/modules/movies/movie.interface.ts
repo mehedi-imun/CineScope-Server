@@ -10,6 +10,7 @@ export type TMovie = {
   viewCount: number;
   totalRating: number;
   isDeleted?: boolean;
+  image: string;
 };
 
 // Put all user instance methods in this interface:
