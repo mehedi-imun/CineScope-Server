@@ -19,6 +19,14 @@ const movieSchema = new Schema<TMovie, TMovieModel, TMovieMethods>({
     type: String,
     required: [true, "Genre is required"],
   },
+  director: {
+    type: String,
+    required: [true, "Director is required"],
+  },
+  cast: {
+    type: String,
+    required: [true, "Cast is required"],
+  },
   slug: {
     type: String,
   },
@@ -34,7 +42,7 @@ const movieSchema = new Schema<TMovie, TMovieModel, TMovieMethods>({
     type: Number,
     default: 0,
   },
-  image: { 
+  image: {
     type: String,
     required: [true, "image is required"],
   },

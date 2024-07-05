@@ -6,6 +6,8 @@ export type TMovie = {
   description: string;
   releaseDate: Date;
   genre: string;
+  director: string;
+  cast: string;
   slug: string;
   viewCount: number;
   totalRating: number;
