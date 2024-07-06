@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "fcff89fd-0b8d-44aa-af30-e4a59e2d8347",
+		"_postman_id": "5e2933a9-7aae-4684-b9c1-66dcb3b6ebe8",
 		"name": "CineScope",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "28346560",
-		"_collection_link": "https://cloudy-spaceship-160654.postman.co/workspace/Team-Workspace~bc4d3685-422d-409f-8beb-c299230f93b9/collection/28346560-fcff89fd-0b8d-44aa-af30-e4a59e2d8347?action=share&source=collection_link&creator=28346560"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29107140"
 	},
 	"item": [
 		{
@@ -14,25 +13,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"title\": \"Inception\",\r\n  \"description\": \"A skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state, is given a chance to regain his old life as payment for a task considered to be impossible: 'inception'.\",\r\n  \"releaseDate\": \"2010-07-16T00:00:00.000Z\",\r\n  \"genre\": \"Sci-Fi\",\r\n  \"slug\": \"inception\"\r\n}\r\n",
+					"raw": "{\r\n    \"title\": \"The Matrix\",\r\n    \"description\": \"A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.\",\r\n    \"releaseDate\": \"1999-03-31T00:00:00Z\",\r\n    \"genre\": \"Science Fiction\",\r\n    \"director\": \"Lana Wachowski, Lilly Wachowski\",\r\n    \"cast\": \"Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss\",\r\n    \"slug\": \"the-matrix\",\r\n    \"image\": \"https://image.tmdb.org/t/p/original/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg\"\r\n  }",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:5000/api/movies",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5000",
-					"path": [
-						"api",
-						"movies"
-					]
-				}
+				"url": "http://localhost:5000/api/movies"
 			},
 			"response": []
 		},
@@ -53,19 +41,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:5000/api/movies/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5000",
-					"path": [
-						"api",
-						"movies",
-						""
-					]
-				}
+				"url": "http://localhost:5000/api/movies"
 			},
 			"response": []
 		},
@@ -86,19 +62,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:5000/api/movies/the-great-adventure-15-06-2024",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5000",
-					"path": [
-						"api",
-						"movies",
-						"the-great-adventure-15-06-2024"
-					]
-				}
+				"url": "http://localhost:5000/api/movies/the-great-adventure-15-06-2024"
 			},
 			"response": []
 		},
@@ -109,27 +73,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"movie\":\"6658ad1032e5ce442a627b96\",\r\n    \"email\":\"hello@gmail.com\",\r\n    \"rating\":\"4\",\r\n    \"comment\":\"good\"\r\n}",
+					"raw": "{\r\n    \"movie\":\"6684e302923a6178c61c7819\",\r\n    \"email\":\"tanmoy@gmail.com\",\r\n    \"rating\":\"4\",\r\n    \"comment\":\"good\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:5000/api/movies/the-great-adventure-15-06-2024/review",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5000",
-					"path": [
-						"api",
-						"movies",
-						"the-great-adventure-15-06-2024",
-						"review"
-					]
-				}
+				"url": "http://localhost:5000/api/movies/inception-16-07-2010/review"
 			},
 			"response": []
 		},
@@ -150,20 +101,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:5000/api/movies/the-great-adventure-15-06-2024/reviews",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5000",
-					"path": [
-						"api",
-						"movies",
-						"the-great-adventure-15-06-2024",
-						"reviews"
-					]
-				}
+				"url": "http://localhost:5000/api/movies/the-great-adventure-15-06-2024/reviews"
 			},
 			"response": []
 		},
@@ -184,20 +122,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:5000/api/movies/6658b4f635a63e82291e969d/single-review",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5000",
-					"path": [
-						"api",
-						"movies",
-						"6658b4f635a63e82291e969d",
-						"single-review"
-					]
-				}
+				"url": "http://localhost:5000/api/movies/6658b4f635a63e82291e969d/single-review"
 			},
 			"response": []
 		},
@@ -215,20 +140,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:5000/api/movies/6658b4f635a63e82291e969d/review",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5000",
-					"path": [
-						"api",
-						"movies",
-						"6658b4f635a63e82291e969d",
-						"review"
-					]
-				}
+				"url": "http://localhost:5000/api/movies/6658b4f635a63e82291e969d/review"
 			},
 			"response": []
 		}
